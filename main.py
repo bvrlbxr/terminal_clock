@@ -5,11 +5,10 @@ def terminal_clock():
 	flag = True
 	while True:
 
-		if flag is True:
+		if flag:
 			formation = "   %H : %M"
 			flag = False
-
-		elif flag is False:
+		else:
 			formation = "   %H     %M"
 			flag = True
 
