@@ -6,12 +6,12 @@ def terminal_clock():
 	while True:
 
 		if flag:
-			formation = "   %H : %M"
-			flag = False
+			formation = "   %H : %M"			
 		else:
 			formation = "   %H     %M"
-			flag = True
-
+			
+		flag = not flag
+		
 		cur_time = datetime.datetime.now().strftime(formation)
 		tprint(cur_time)
 		time.sleep(0.5)
